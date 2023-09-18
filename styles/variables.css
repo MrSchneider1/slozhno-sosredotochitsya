@@ -2,3 +2,17 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --background-color: #000028;
+  --paragraph-title-color: #000028;
+  --decoration-color: #FF0070; /*цвет кнопок уголков и заголовков секций*/
+  --accent-color: #FF0070; /*цвет фона заг параграфов и пар в заголовке*/
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --title-shadow-color: #FF0070;
+  --hover-button-effect-color: rgba(255, 0, 112, 0.40);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font-size: 1.125rem;
+  --small-gap: 10px;
+  --large-gap: 20px;
+}
