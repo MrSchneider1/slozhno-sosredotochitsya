@@ -61,7 +61,7 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--decoration-color); 
+  box-shadow: 0 0 4px 2px var(--decoration-color);
 }
 
 .header__theme-menu {
@@ -164,10 +164,6 @@ section:last-of-type {
   line-height: 130%;
 }
 
-.tips__paragraph_title {
-  margin-block-end: var(--small-gap, 10px);
-}
-
 .decorated-word {
   text-shadow: 0.09rem 0.065rem 0px var(--accent-color);
   text-decoration: none;
@@ -183,10 +179,6 @@ section:last-of-type {
 
 .tips .paragraph_title:not(.tips__paragraph_title) {
   margin-block-start: 0;
-}
-
-.tips__paragraph_title {
-  font-weight: 400;
 }
 
 .pictures {
@@ -433,7 +425,7 @@ section:last-of-type {
   }
 
   .concentration .section__title {
-    inline-size: 25%;
+    inline-size: 27%;
   }
 
   .concentration .paragraph_title {
