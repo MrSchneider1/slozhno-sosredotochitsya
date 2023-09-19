@@ -137,10 +137,15 @@ section:not(:last-of-type) {
   margin-block-end: 50px;
 }
 
+section:last-of-type {
+  margin-block-end: 40px;
+}
+
 .section__title {
   color: var(--decoration-color);
   font-size: inherit;
   margin-block-end: var(--large-gap, 20px);
+  line-height: 130%;
 }
 
 .paragraph_title {
@@ -149,12 +154,14 @@ section:not(:last-of-type) {
   font-size: inherit;
   font-weight: 700;
   margin: var(--large-gap, 20px) 0 10px;
+  line-height: 130%;
 }
 
 .paragraph {
   color: var(--text-color);
   font-size: inherit;
   inline-size: 98.8%;
+  line-height: 130%;
 }
 
 .tips__paragraph_title {
@@ -174,7 +181,11 @@ section:not(:last-of-type) {
   outline: 1px solid var(--text-color);
 }
 
-.tips_title {
+.tips .paragraph_title:not(.tips__paragraph_title) {
+  margin-block-start: 0;
+}
+
+.tips__paragraph_title {
   font-weight: 400;
 }
 
@@ -292,6 +303,14 @@ section:not(:last-of-type) {
     padding: 0 var(--large-gap, 20px);
   }
 
+  section:not(:last-of-type) {
+    margin-block-end: 80px;
+  }
+
+  section:last-of-type {
+    margin-block-end: 60px;
+  }
+
   .paragraph {
     margin: 0;
     padding: 0;
@@ -300,12 +319,12 @@ section:not(:last-of-type) {
 
   .why {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 32% 66%;
     gap: var(--large-gap, 20px);
     padding-block-start: 60px;
   }
-
-  li:first-of-type > .paragraph_title {
+  
+  .why li:first-of-type .paragraph_title {
     margin-block-start: 0;
   }
 
@@ -317,10 +336,12 @@ section:not(:last-of-type) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--large-gap, 20px);
+    inline-size: 100%;
   }
 
-  .tips .paragraph_title:not(.tips_title) {
-    margin-block-start: 0;
+  .tips__paragraph_title {
+    font-weight: 400;
+    margin-block-start: var(--large-gap, 20px);
   }
 
   .pictures {
@@ -334,7 +355,7 @@ section:not(:last-of-type) {
   .pictures_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 26% 31% 43%;
+    grid-template-rows: 23.8% 28.6% 39.8%; /* 26% 31% 43% */
     gap: var(--large-gap, 20px);
   }
 
