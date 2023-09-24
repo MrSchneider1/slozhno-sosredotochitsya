@@ -41,3 +41,15 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+section {
+  padding: 0 var(--small-gap, 10px);
+}
+
+section:not(:last-of-type) {
+  margin-block-end: 50px;
+}
+
+section:last-of-type {
+  margin-block-end: 40px;
+}
